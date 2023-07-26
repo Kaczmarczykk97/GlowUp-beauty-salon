@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Glow Studio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="lightbox.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"
+      defer
+    ></script>
+    <script src="lightbox-plus-jquery.js" defer></script>
+    <script src="scrollreveal.min.js" defer></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <nav class="navigation">
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <a href="#" id="logo-container">
+        <img src="img/logo.png" alt="Logo Glow Studio" class="logo" />
+      </a>
+      <ul class="nav-items">
+        <li class="nav-item"><a href="#section-about-us">O nas</a></li>
+        <li class="nav-item"><a href="#section-offer">Oferta</a></li>
+        <li class="nav-item"><a href="#section-salon">Nasze prace</a></li>
+        <li class="nav-item"><a href="#section-contact">Kontakt</a></li>
+      </ul>
+    </nav>
+    <header class="header">
+      <div class="text-container">
+        <h1 class="heading heading-h1">
+          <span class="text-effect">Glow</span> up
+        </h1>
+        <h2 class="heading heading-h2">with us</h2>
+        <p class="text">Odwiedz nas, a nasz zespół zadba, abyś olśniewała.</p>
+        <a href="#section-salon">
+          <button class="button">
+            Zobacz nasze prace<ion-icon
+              name="chevron-down-outline"
+              class="icon"
+            ></ion-icon>
+          </button>
+        </a>
+      </div>
+
+      <div class="img-container">
+        <img src="img/header.png" alt="Three girls" />
+      </div>
+      <div class="triangle triangle-3"></div>
+      <div class="triangle triangle-2"></div>
+      <div class="triangle triangle-1"></div>
+    </header>
+
+    <section class="section about-us" id="section-about-us">
+      <h2 class="heading heading-h2">Nasi pracownicy</h2>
+      <div class="wrapper swiper mySwiper">
+        <div class="card swiper-wrapper">
+          <div class="card-content swiper-slide">
+            <div class="image">
+              <img src="img/about-us-1.png" alt="Hairdresser" />
+            </div>
+            <div class="text-container">
+              <div class="person">
+                <h2 class="heading heading-h2">
+                  <span class="text-effect">Karolina</span> Kowalska
+                </h2>
+                <h3 class="heading heading-h3">Fryzjerka</h3>
+              </div>
+              <div>
+                <p class="text-about">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa
+                  doloremque perferendis inventore dolore totam dignissimos
+                  facilis non quisquam unde, obcaecati autem dicta vero.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card-content swiper-slide">
+            <div class="image">
+              <img src="img/about-us-2.png" alt="Hairdresser" />
+            </div>
+            <div class="text-container">
+              <div class="person">
+                <h2 class="heading heading-h2">
+                  <span class="text-effect">Michalina</span> Nowak
+                </h2>
+                <h3 class="heading heading-h3">Makijażystka</h3>
+              </div>
+              <div>
+                <p class="text-about">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa
+                  doloremque perferendis inventore dolore totam dignissimos
+                  facilis non quisquam unde, obcaecati autem dicta vero.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card-content swiper-slide">
+            <div class="image">
+              <img src="img/about-us-3.png" alt="Hairdresser" />
+            </div>
+            <div class="text-container">
+              <div class="person">
+                <h2 class="heading heading-h2">
+                  <span class="text-effect">Helena</span> Kowalska
+                </h2>
+                <h3 class="heading heading-h3">Kosmetyczka</h3>
+              </div>
+              <div>
+                <p class="text-about">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa
+                  doloremque perferendis inventore dolore totam dignissimos
+                  facilis non quisquam unde, obcaecati autem dicta vero.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </section>
+    <section class="section offer" id="section-offer">
+      <h2 class="heading heading-h2">Zapoznaj się z ofertą</h2>
+      <div class="offer-container">
+        <div class="offer-content card-1">
+          <div class="image" id="offer-img-left">
+            <img src="img/makeup.jpg" alt="makeup" />
+            <div class="overlay">
+              <div class="description">
+                <h3 class="heading heading-h3">Makeup</h3>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Assumenda voluptatibus ullam dignissimos labore officiis.
+                </p>
+              </div>
+            </div>
+          </div>
+          <ion-icon
+            name="chevron-forward-outline"
+            class="icon arr-right"
+          ></ion-icon>
+          <div class="services services-right">
+            <div class="service">
+              <h3 class="heading heading-h3">Makijaż imprezowy</h3>
+              <p>Czas trwania: <b>1h</b></p>
+            </div>
+            <div class="service">
+              <h3 class="heading heading-h3">Makijaż weselny</h3>
+              <p>Czas trwania: <b>2h</b></p>
+            </div>
+          </div>
+        </div>
+        <div class="offer-content card-2">
+          <div class="image" id="offer-img-right">
+            <img src="img/lashes.jpg" alt="lashes" />
+            <div class="overlay">
+              <div class="description">
+                <h3 class="heading heading-h3">Lashes</h3>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Assumenda voluptatibus ullam dignissimos labore officiis.
+                </p>
+              </div>
+            </div>
+          </div>
+          <ion-icon
+            name="chevron-back-outline"
+            class="icon arr-left"
+          ></ion-icon>
+          <div class="services services-left">
+            <div class="service">
+              <h3 class="heading heading-h3">Stylizacja rzęs</h3>
+              <p>Czas trwania: <b>1,5h</b></p>
+            </div>
+            <div class="service">
+              <h3 class="heading heading-h3">Laminacja rzęs</h3>
+              <p>Czas trwania: <b>1,5h</b></p>
+            </div>
+          </div>
+        </div>
+        <div class="offer-content card-3">
+          <div class="image" id="offer-img-left">
+            <img src="img/nails.jpg" alt="nails" />
+            <div class="overlay">
+              <div class="description">
+                <h3 class="heading heading-h3">Nails</h3>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Assumenda voluptatibus ullam dignissimos labore officiis.
+                </p>
+              </div>
+            </div>
+          </div>
+          <ion-icon
+            name="chevron-forward-outline"
+            class="icon arr-right"
+          ></ion-icon>
+          <div class="services services-right">
+            <div class="service">
+              <h3 class="heading heading-h3">Stylizacja paznokci</h3>
+              <p>Czas trwania: <b>1,5h</b></p>
+            </div>
+          </div>
+        </div>
+        <div class="offer-content card-4">
+          <div class="image" id="offer-img-right">
+            <img src="img/brows.jpg" alt="brows" />
+            <div class="overlay">
+              <div class="description">
+                <h3 class="heading heading-h3">Brows</h3>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Assumenda voluptatibus ullam dignissimos labore officiis.
+                </p>
+              </div>
+            </div>
+          </div>
+          <ion-icon
+            name="chevron-back-outline"
+            class="icon arr-left"
+          ></ion-icon>
+          <div class="services services-left">
+            <div class="service">
+              <h3 class="heading heading-h3">Makijaż permanentny brwi</h3>
+              <p>Czas trwania: <b>2,5h</b></p>
+            </div>
+            <div class="service">
+              <h3 class="heading heading-h3">Laminacja brwi</h3>
+              <p>Czas trwania: <b>1h</b></p>
+            </div>
+            <div class="service">
+              <h3 class="heading heading-h3">Henna pudrowa</h3>
+              <p>Czas trwania: <b>1h</b></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section salon" id="section-salon">
+      <h2 class="heading heading-h2">Nasze wykonane prace</h2>
+      <div class="salon-gallery">
+        <a
+          href="img/stylizacje/stylizacja-1.jpg"
+          data-lightbox="Stylizacje"
+          data-title="Zdjęcie 1"
+        >
+          <img src="img/stylizacje/stylizacja-1.jpg" alt="stylizacja" />
+        </a>
+        <a
+          href="img/stylizacje/stylizacja-2.jpg"
+          data-lightbox="Stylizacje"
+          data-title="Zdjęcie 2"
+        >
+          <img src="img/stylizacje/stylizacja-2.jpg" alt="stylizacja" />
+        </a>
+        <a
+          href="img/stylizacje/stylizacja-3.jpg"
+          data-lightbox="Stylizacje"
+          data-title="Zdjęcie 3"
+        >
+          <img src="img/stylizacje/stylizacja-3.jpg" alt="stylizacja" />
+        </a>
+        <a
+          href="img/stylizacje/stylizacja-4.jpg"
+          data-lightbox="Stylizacje"
+          data-title="Zdjęcie 4"
+        >
+          <img src="img/stylizacje/stylizacja-4.jpg" alt="stylizacja" />
+        </a>
+        <a
+          href="img/stylizacje/stylizacja-5.jpg"
+          data-lightbox="Stylizacje"
+          data-title="Zdjęcie 5"
+        >
+          <img src="img/stylizacje/stylizacja-5.jpg" alt="stylizacja" />
+        </a>
+        <a
+          href="img/stylizacje/stylizacja-6.jpg"
+          data-lightbox="Stylizacje"
+          data-title="Zdjęcie 6"
+        >
+          <img src="img/stylizacje/stylizacja-6.jpg" alt="stylizacja" />
+        </a>
+        <a
+          href="img/stylizacje/stylizacja-7.jpg"
+          data-lightbox="Stylizacje"
+          data-title="Zdjęcie 7"
+        >
+          <img src="img/stylizacje/stylizacja-7.jpg" alt="stylizacja" />
+        </a>
+        <a
+          href="img/stylizacje/stylizacja-8.jpg"
+          data-lightbox="Stylizacje"
+          data-title="Zdjęcie 8"
+        >
+          <img src="img/stylizacje/stylizacja-8.jpg" alt="stylizacja" />
+        </a>
+        <a
+          href="img/stylizacje/stylizacja-9.jpg"
+          data-lightbox="Stylizacje"
+          data-title="Zdjęcie 9"
+        >
+          <img src="img/stylizacje/stylizacja-9.jpg" alt="stylizacja" />
+        </a>
+        <a
+          href="img/stylizacje/stylizacja-10.jpg"
+          data-lightbox="Stylizacje"
+          data-title="Zdjęcie 10"
+        >
+          <img src="img/stylizacje/stylizacja-10.jpg" alt="stylizacja" />
+        </a>
+        <a
+          href="img/stylizacje/stylizacja-11.jpg"
+          data-lightbox="Stylizacje"
+          data-title="Zdjęcie 11"
+        >
+          <img src="img/stylizacje/stylizacja-11.jpg" alt="stylizacja" />
+        </a>
+        <a
+          href="img/stylizacje/stylizacja-12.jpg"
+          data-lightbox="Stylizacje"
+          data-title="Zdjęcie 12"
+        >
+          <img src="img/stylizacje/stylizacja-12.jpg" alt="stylizacja" />
+        </a>
+      </div>
+    </section>
+    <section class="section review-section">
+      <h2 class="heading heading-h2">Opinie naszych klientów</h2>
+      <div class="reviews-container">
+        <div class="review">
+          <img src="img/quotes.png" alt="quotes" class="quotes" />
+          <p>
+            Salon piękny i przytulny, wykonanie makijażu Pierwsza klasa! Aż chce
+            się tam wracać ❤️
+          </p>
+          <img src="img/customer-1.jpg" alt="customer" class="customer" />
+          <h3 class="heading heading-h3">Angelina Jolie</h3>
+          <div class="stars">
+            <ion-icon name="star" class="icon"></ion-icon>
+            <ion-icon name="star" class="icon"></ion-icon>
+            <ion-icon name="star" class="icon"></ion-icon>
+            <ion-icon name="star" class="icon"></ion-icon>
+            <ion-icon name="star" class="icon"></ion-icon>
+          </div>
+        </div>
+        <div class="review">
+          <img src="img/quotes.png" alt="quotes" class="quotes" />
+          <p>
+            Z czystym sumieniem polecam, miła atmosfera i zadowolenie z
+            wykonanej usługi 😊
+          </p>
+          <img src="img/customer-2.jpg" alt="customer" class="customer" />
+          <h3 class="heading heading-h3">Jennifer Aniston</h3>
+          <div class="stars">
+            <ion-icon name="star" class="icon"></ion-icon>
+            <ion-icon name="star" class="icon"></ion-icon>
+            <ion-icon name="star" class="icon"></ion-icon>
+            <ion-icon name="star" class="icon"></ion-icon>
+            <ion-icon name="star" class="icon"></ion-icon>
+          </div>
+        </div>
+        <div class="review">
+          <img src="img/quotes.png" alt="quotes" class="quotes" />
+          <p>Piękne miejsce i pełen profesjonalizm 😊</p>
+          <img src="img/customer-3.jpg" alt="customer" class="customer" />
+          <h3 class="heading heading-h3">Emma Watson</h3>
+          <div class="stars">
+            <ion-icon name="star" class="icon"></ion-icon>
+            <ion-icon name="star" class="icon"></ion-icon>
+            <ion-icon name="star" class="icon"></ion-icon>
+            <ion-icon name="star" class="icon"></ion-icon>
+            <ion-icon name="star" class="icon"></ion-icon>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="section-contact">
+      <h2 class="heading heading-h2">Tutaj nas znajdziesz</h2>
+      <div class="contact-container">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d631.1220311444886!2d17.61698022459023!3d50.74798211447413!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471035c1e5731f51%3A0xb6a4eed406ceb106!2sMatejki%201%2C%2049-340%20Lewin%20Brzeski!5e0!3m2!1spl!2spl!4v1678275326979!5m2!1spl!2spl"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+        <div class="contact-box">
+          <h3 class="heading heading-h3">Skontaktuj się z nami</h3>
+          <div class="box">
+            <a
+              href="https://www.facebook.com/profile.php?id=100068403709594"
+              target="_blank"
+            >
+              <ion-icon name="logo-facebook" class="icon facebook"></ion-icon>
+              <p class="fb">Glow Studio Lewin Brzeski</p>
+            </a>
+          </div>
+          <div class="box">
+            <ion-icon name="call" class="icon phone"></ion-icon>
+            <p>794 491 304</p>
+          </div>
+          <div class="box">
+            <ion-icon name="call" class="icon phone"></ion-icon>
+            <p>698 019 900</p>
+          </div>
+          <div class="box">
+            <ion-icon name="call" class="icon phone"></ion-icon>
+            <p>734 467 350</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="copyright">
+      <h3 class="heading heading-h3">
+        Copyright © Glow Studio Lewin Brzeski | Powered by Kamil Kaczmarczyk
+      </h3>
+    </div>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
